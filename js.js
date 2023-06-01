@@ -7,7 +7,7 @@ function calculateDamage() {
     const player2Resistance = parseInt(document.getElementById('player2-resistance').value);
   
     const physicalDamage = player1Attack - player2Resistance / 2;
-    const magicDamage = (player1MagicAttack + player1Mana) - player2Resistance / 2;
+    const magicDamage = (player1MagicAttack + player1Mana) - player2Resistance;
   
     const result = document.getElementById('result');
     result.innerHTML = `Dano Físico: ${physicalDamage}<br>Dano Mágico: ${magicDamage}`;
