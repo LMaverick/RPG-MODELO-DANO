@@ -1,26 +1,91 @@
+/* Estilos gerais */
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background-color: #1f1f1f;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .players {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #292929;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.players {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.player {
+  flex: 0 0 100%;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #777;
+  border-radius: 3px;
+  background-color: #555;
+  color: #fff;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #8b0000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos responsivos para celular */
+@media screen and (max-width: 480px) {
   .player {
-    width: 48%;
+    flex: 0 0 100%;
   }
-  
-  button {
-    display: block;
-    margin: 20px auto;
-  }
-  
-  #result {
-    margin-top: 20px;
-    font-weight: bold;
-  }
-  
+}
